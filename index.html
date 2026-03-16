@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Gallery</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- CSS Eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="container nav-wrapper">
+        <div class="logo">Portofolio</div>
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button
+              id="theme-toggle"
+              class="btn btn-outline"
+              aria-label="Toggle theme"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h4 class="hero-greeting">👋 Hi there, I'm</h4>
+          <h1>Afryza <span class="hero-lastname">Heryanto</span></h1>
+          <h3>Web Developer Enthusiast</h3>
+          <p class="hero-description">
+          "Membangun website modern dan responsif yang mudah digunakan dengan tampilan rapi dan fitur yang berjalan dengan baik."
+          </p>
+          <div class="hero-btn">
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img
+              src="assets/profil.jpg"
+              alt="Afryza Heryanto Profile Photo"
+              onerror="
+                this.onerror = null;
+                this.src = 'https://via.placeholder.com/400x400?text=Afryza';
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get to know</span>
+          <h2>About Me</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="about-wrapper">
+          <div class="about-text">
+            <p class="about-paragraph">
+               Saya adalah mahasiswa Informatika yang memiliki minat pada pengembangan
+                web frontend. Saya sedang mempelajari pembuatan aplikasi web sederhana
+                 menggunakan PHP dan MySQL, serta memahami dasar-dasar HTML, CSS,
+                   Flexbox, dan Box Model dalam membangun tampilan website.
+            </p>
+            <p class="about-paragraph">
+              Saat ini saya masih terus belajar dan mengembangkan kemampuan
+              JavaScript serta teknologi web modern untuk membuat tampilan
+               website yang lebih interaktif dan mudah digunakan
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <h3>3+</h3>
+              <p>Projects<br /><span class="stat-detail">selesai</span></p>
+            </div>
+            <div class="stat-card">
+              <h3>∞</h3>
+              <p>
+                Commitment<br /><span class="stat-detail">100% serius</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My expertise</span>
+          <h2>Skills</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Frontend Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <i class="fas fa-code"></i> Frontend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Bootstrap</span>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <i class="fas fa-database"></i> Backend
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Design Tools -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <i class="fas fa-paint-brush"></i> Design
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Figma</span>
+              <span class="skill-tag">Canva</span>
+              <span class="skill-tag">Visily</span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <i class="fas fa-users"></i> Soft Skills
+            </h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Teamwork</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Communication</span>
+              <span class="skill-tag">Time Management</span>
+              <span class="skill-tag">Adaptability</span>
+              <span class="skill-tag">Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My works</span>
+          <h2>Projects</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="assets/project-1.png"
+                alt="Bank Sampah Digital Project"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://via.placeholder.com/300x180?text=Bank+Sampah';
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>Bank Sampah Digital</h3>
+              <p>
+                Aplikasi berbasis web menggunakan PHP Native dan MySQL yang dibuat untuk mempermudah masyarakat dalam menabung sampah serta membantu petugas bank sampah dalam mengelola data nasabah, mencatat setoran, dan memantau transaksi dengan lebih mudah dan terstruktur.
+              </p>
+              <div class="card-tags">
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Bootstrap</span>
+              </div>
+              <div class="card-preview">
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="assets/project-2.jpg"
+                alt="Website Portfolio Project"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://via.placeholder.com/300x180?text=Portfolio';
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>Aplikasi TanamKu</h3>
+              <p>
+                Aplikasi mobile berbasis Flutter yang membantu pengguna belajar menanam tanaman.
+                Menyediakan fitur edukasi cara menanam, catatan perkembangan tanaman, katalog
+                perawatan tanaman, serta pengingat untuk merawat tanaman secara rutin.
+
+              </p>
+              <div class="card-tags">
+                <span>Flutter</span>
+                <span>Dart</span>
+                <span>Mobile App</span>
+              </div>
+              <div class="card-preview">
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="card-image">
+              <img
+                src="assets/project-3.png"
+                alt="Sports News App UI Project"
+                onerror="
+                  this.onerror = null;
+                  this.src =
+                    'https://via.placeholder.com/300x180?text=Sports+News';
+                "
+              />
+            </div>
+            <div class="card-content">
+              <h3>LibraNet - Book Marketplace UI Design</h3>
+              <p>
+                Desain UI untuk platform marketplace penjualan buku bernama LibraNet.
+                 Tampilan dirancang modern dan user-friendly dengan konsep seperti
+                  marketplace populer (Shopee dan Amazon), mencakup halaman katalog buku,
+                    detail produk, dan tampilan navigasi yang sederhana..
+              </p>
+              <div class="card-tags">
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Prototype</span>
+              </div>
+              <div class="card-preview">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+        <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">My Contact</span>
+          <h2>Contact Me</h2>
+          <div class="header-line"></div>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>afryzaher@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <div>
+                <h4>Instagram</h4>
+                <p>@afrzhy</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-github"></i>
+              <div>
+                <h4>GitHub</h4>
+                <p>/afrzhy21</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Lokasi</h4>
+                <p>Tangerang, Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            © 2026 Afryza Heryanto
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/afrzhy21"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/afryza-heryanto-7257603ab/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- THEME TOGGLE SCRIPT -->
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const root = document.body;
+      const saved = localStorage.getItem("theme");
+      if (saved === "dark") {
+        root.classList.add("dark");
+        toggle.innerHTML = '<i class="fas fa-sun"></i>';
+      } else if (
+        !saved &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        root.classList.add("dark");
+        toggle.innerHTML = '<i class="fas fa-sun"></i>';
+      }
+      toggle.addEventListener("click", () => {
+        if (root.classList.toggle("dark")) {
+          localStorage.setItem("theme", "dark");
+          toggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          localStorage.setItem("theme", "light");
+          toggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+      });
+    </script>
+  </body>
+</html>
